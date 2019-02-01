@@ -11,7 +11,8 @@ public class LoginController {
 	public ModelAndView loginView() {
 
 		String message = "<br><div style='text-align:center;'>"
-				+ "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from Sergio.java **********</div><br><br>";
+				+ "<h3>Hello Sergio!</h3></div><br><br>";
+		
 		return new ModelAndView("login", "message", message);
 	}
 

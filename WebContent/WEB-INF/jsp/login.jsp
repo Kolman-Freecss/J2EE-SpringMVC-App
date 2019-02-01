@@ -8,18 +8,19 @@ body {
 }
 </style>
 </head>
-<body>${message}
+<body>
 
+	${message}
 	<br>
 	<br>
-	<div
-		style="font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align: center;">
+	<div style="font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align: center;">
 
-		Spring MCV Tutorial by <a href="https://crunchify.com">Crunchify</a>.
-		Click <a href="https://crunchify.com/category/java-tutorials/"
-			target="_blank">here</a> for all Java and <a
-			href='https://crunchify.com/category/spring-mvc/' target='_blank'>here</a>
-		for all Spring MVC, Web Development examples.<br>
+		Anime Library <br/><br/>
+		
+		There you have two pages where you could see anime <br/><br/>
+		<a href="https://animeflv.net/" target='_blank'>AnimeFlv</a> <br/>
+		<a href="https://jkanime.net/" target='_blank'>JkAnime</a>		
+		
 	</div>
 </body>
 </html>
