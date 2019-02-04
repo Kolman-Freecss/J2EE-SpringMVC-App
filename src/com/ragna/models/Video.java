@@ -2,9 +2,9 @@ package com.ragna.models;
 
 import java.util.Date;
 
-public class Anime {
+public class Video{
 
-	public enum Gender{
+public enum Gender{
 		
 		HORROR("Horror"),
 		COMEDY("Comedy"),
@@ -25,14 +25,23 @@ public class Anime {
 	private String name;
 	private Gender gender;
 	private Date produced;
+	private boolean finished;
+	private boolean stillInEmission;
 	private int punctuation;
 	private String web;
 	
-	public Anime(String name, Gender gender, Date produced, int punctuation, String web) {
+	public Video() {
+		super();
+	}
+
+	public Video(String name, Gender gender, Date produced, boolean finished, boolean stillInEmission, int punctuation,
+			String web) {
 		super();
 		this.name = name;
 		this.gender = gender;
 		this.produced = produced;
+		this.finished = finished;
+		this.stillInEmission = stillInEmission;
 		this.punctuation = punctuation;
 		this.web = web;
 	}
@@ -76,5 +85,6 @@ public class Anime {
 	public void setWeb(String web) {
 		this.web = web;
 	}
-	
+
+
 }

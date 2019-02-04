@@ -17,7 +17,7 @@
 		<a href="https://jkanime.net/" target='_blank'>JkAnime</a> <br/><br/>
 		
 		<!-- Post Request -->
-		<form action="animeTable" method="GET">
+		<form action="videoTable" method="GET">
 		
 			Enter your name: <input type="text" name="name" /> 
 			Password <input type="password" name="password" /> 

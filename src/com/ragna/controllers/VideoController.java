@@ -5,19 +5,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ragna.services.AnimeService;
+import com.ragna.util.MockFactory;
+
 
 @Controller
-public class AnimeController {
+public class VideoController {
 
 	@Autowired
-	private AnimeService animeService;
+	private MockFactory mockFactory;
 	
-	@RequestMapping("/animeTable")
+	@RequestMapping("/videoTable")
 	public ModelAndView loginView() {
 
-		ModelAndView modelView = new ModelAndView("animeTable");
-		modelView.addObject("animes", animeService.getListAnimes());
+		ModelAndView modelView = new ModelAndView("videoTable");
+		modelView.addObject("videos", mockFactory.getListVideos());
 		
 		return modelView;
 	}

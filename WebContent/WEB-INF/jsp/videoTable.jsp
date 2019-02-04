@@ -3,18 +3,19 @@
 <html>
 <head>
 
-<title>Anime Section</title>
+<title>Video Section</title>
 
 </head>
 <body>
 
 	<br>
-	<p>Table of your animes</p>
+	<p>Table of your films and series</p>
 	<table>
-		<c:forEach items="${animes}" var="anime">
+<!-- TODO Add boostrap -->
+		<c:forEach items="${videos}" var="video">
 			<tr>
-				<td>${anime.name}</td>
-				<td>${anime.gender}</td>
+				<td>${video.name}</td>
+				<td>${video.gender}</td>
 			
 			</tr>
 		</c:forEach>
