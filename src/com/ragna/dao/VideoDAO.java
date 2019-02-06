@@ -1,10 +1,10 @@
-package com.ragna.services;
+package com.ragna.dao;
 
 import java.util.List;
 
 import com.ragna.models.Video;
 
-public interface VideoService {
+public interface VideoDAO {
 
 	public void addVideo(Video video);
 	public Video getVideo(int id);

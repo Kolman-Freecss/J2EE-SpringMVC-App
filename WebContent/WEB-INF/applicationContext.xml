@@ -4,7 +4,7 @@
    <!-- Configuring the JDBC connection-->
    <bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url" value="jdbc:mysql://localhost:3306/springmvc" />
+      <property name="url" value="jdbc:mysql://localhost:3306/j2ee-spring-app" />
       <property name="username" value="root" />
       <property name="password" value="12345" />
    </bean>
@@ -12,9 +12,7 @@
    <!-- Configuring the Hibernate4 Session Factory Bean -->
    <bean id="sessionFactoryBean" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
       <property name="dataSource" ref="dataSourceBean" />
-      <property name="mappingResources">
-         <value>com/ragna/models/User.hbm.xml</value>
-      </property>
+      <property name="packagesToScan" value="com.ragna.models"/>
       <property name="hibernateProperties">
          <props>
             <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
