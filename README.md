@@ -6,12 +6,12 @@ Objective: Create a simply app to learn the principles of the course
 
 Programming Techs: Java, JQuery, JSP, JSTL, JSPF
 
-Utils: Spring Framework, Maven
+Utils: Spring MVC Framework, Maven
 
-Continuous Integration: Jenkins
-
-Quality Code: SonarQube, SonarLint
+Quality Code: SonarLint
 
 Methodologies: GitFlow, Agile
+
+Version Control: Git
 
 Server: Tomcat
